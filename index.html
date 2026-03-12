@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=League+Spartan:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Planets Fact Site</title>
+  </head>
+  <body>
+    <header>
+      <h2>The Planets</h2>
+      <nav>
+        <ul class="nav-menu">
+          <li>
+            <a href="#Mercury" class="nav-link" data-planet="Mercury"
+              >Mercury</a
+            >
+          </li>
+          <li>
+            <a href="#Venus" class="nav-link" data-planet="Venus">Venus</a>
+          </li>
+          <li>
+            <a href="#Earth" class="nav-link" data-planet="Earth">Earth</a>
+          </li>
+          <li><a href="#Mars" class="nav-link" data-planet="Mars">Mars</a></li>
+          <li>
+            <a href="#Jupiter" class="nav-link" data-planet="Jupiter"
+              >Jupiter</a
+            >
+          </li>
+          <li>
+            <a href="#Saturn" class="nav-link" data-planet="Saturn">Saturn</a>
+          </li>
+          <li>
+            <a href="#Uranus" class="nav-link" data-planet="Uranus">Uranus</a>
+          </li>
+          <li>
+            <a href="#Neptune" class="nav-link" data-planet="Neptune"
+              >Neptune</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <hr />
+
+    <main>
+      <div class="planet-container">
+        <div class="planet-image-container">
+          <img id="planet-image" src="" alt="Planet Image" />
+        </div>
+
+        <div class="planet-info">
+          <h1 id="planet-name">Назва планети</h1>
+
+          <p id="planet-description">Опис планети</p>
+
+          <div class="source-container">
+            Source: <a id="source-link" href="#" target="_blank">Wikipedia
+              <svg xmlns="http://www.w3.org/2000/svg" width="12" height="12">
+              <path fill="#FFF"
+                d="M11.34.66C10.9.22 10.37 0 9.75 0h-7.5C1.63 0 1.1.22.66.66.22 1.1 0 1.63 0 2.25v7.5c0 .62.22 1.15.66 1.59.44.44.97.66 1.59.66h7.5c.62 0 1.15-.22 1.59-.66.44-.44.66-.97.66-1.59v-7.5c0-.62-.22-1.15-.66-1.59zM10 6.25a.467.467 0 01-.305.46.544.544 0 01-.195.04.465.465 0 01-.352-.149L8.023 5.476 3.852 9.648a.481.481 0 01-.352.149.48.48 0 01-.352-.149l-.796-.797a.48.48 0 01-.149-.351.48.48 0 01.149-.352l4.172-4.172-1.125-1.125c-.162-.15-.198-.333-.11-.546A.467.467 0 015.75 2H9.5c.135 0 .253.05.352.148A.48.48 0 0110 2.5v3.75z"
+                opacity=".5" />
+            </svg>
+            </a>
+          </div>
+
+          <div class="tabs-buttons">
+            <button class="btn" data-view="overview">
+              <span class="btn-num">01</span> Overview
+            </button>
+            <button class="btn" data-view="structure">
+              <span class="btn-num">02</span> Internal Structure
+            </button>
+            <button class="btn" data-view="geology">
+              <span class="btn-num">03</span> Surface Geology
+            </button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="stats-container">
+      <div class="stat-box">
+        <h4>Rotation Time</h4>
+        <h2 id="rotation">0 Days</h2>
+      </div>
+      <div class="stat-box">
+        <h4>Revolution Time</h4>
+        <h2 id="revolution">0 Days</h2>
+      </div>
+      <div class="stat-box">
+        <h4>Radius</h4>
+        <h2 id="radius">0 KM</h2>
+      </div>
+      <div class="stat-box">
+        <h4>Average Temp.</h4>
+        <h2 id="temperature">0°C</h2>
+      </div>
+    </footer>
+
+    <script src="./app.js"></script>
+  </body>
+</html>

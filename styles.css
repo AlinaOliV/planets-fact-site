@@ -1,0 +1,241 @@
+:root {
+  --main-color: #070724;
+  --text-color: #fff;
+  /* --btn-active-color: #419EBB; */
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+body {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: var(--main-color);
+  background-image: url(./assets/background-stars.svg);
+  color: var(--text-color);
+  display: flex;
+  flex-direction: column;
+}
+header {
+  height: 100px;
+  padding-right: 40px;
+  padding-left: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h2 {
+  font-family: "Antonio";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 36px;
+  letter-spacing: -1.05px;
+  text-transform: uppercase;
+}
+nav {
+  height: 100%;
+}
+.nav-menu {
+  height: 100%;
+  display: flex;
+  column-gap: 33px;
+  list-style: none;
+  align-items: center;
+}
+.nav-link {
+  display: block;
+  padding-top: 33px;
+  padding-bottom: 27px;
+  font-family: "Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  opacity: 0.75;
+  transition: 0.5s all ease-in-out;
+  text-decoration: none;
+  color: inherit;
+}
+.nav-link:hover {
+  opacity: 1;
+}
+.nav-link.active-mercury{
+    border-top: 4px solid #419EBB;
+ }
+.nav-link.active-venus{
+    border-top: 4px solid #EDA249;
+}
+.nav-link.active-earth{
+    border-top: 4px solid #6D2ED5;
+}
+.nav-link.active-mars{
+    border-top: 4px solid #D14C32;
+}
+.nav-link.active-jupiter{
+    border-top: 4px solid #D83A34;
+}
+.nav-link.active-saturn{
+    border-top: 4px solid #CD5120;
+}
+.nav-link.active-uranus{
+    border-top: 4px solid #1EC1A2;
+}
+.nav-link.active-neptune{
+    border-top: 4px solid #2D68F0;
+}
+hr {
+  border: none;
+  height: 1px;
+  background-color: #979797;
+}
+.planet-container {
+  padding-top: 126px;
+  /* padding-bottom: 87px; */
+  display: flex;
+  column-gap: 300px;
+  justify-content: center;
+  align-items: center;
+}
+.planet-image-container {
+  position: relative;
+}
+.image-geology {
+  position: absolute;
+  display: block;
+  width: 163px;
+  height: 199px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 40%);
+}
+.planet-info {
+  width: 350px;
+}
+#planet-name {
+  font-family: "Antonio";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 104px;
+  text-transform: uppercase;
+  margin-bottom: 23px;
+}
+#planet-description{
+  font-family: "Spartan";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  margin-bottom: 24px;
+}
+.source-container {
+  font-family: "Spartan";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+  margin-bottom: 39px;
+}
+#source-link {
+  color: inherit;
+  font-weight: 700;
+}
+#source-container svg {
+  vertical-align: middle;
+}
+.tabs-buttons {
+  padding-bottom: 60px;
+}
+.btn {
+  display: flex;
+  align-items: center;
+  column-gap: 25px;
+  padding-left: 28px;
+  width: 350px;
+  height: 48px;
+  background-color: inherit;
+  color: inherit;
+  mix-blend-mode: normal;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  font-family: "Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 25px;
+  letter-spacing: 2.57px;
+  text-transform: uppercase;
+  transition: 0.5s all ease-in-out;
+}
+.btn-num {
+  opacity: 0.5;
+}
+.btn:hover{
+background: rgba(216, 216, 216, 0.2);
+}
+.btn.active-mercury{
+    background-color: #419EBB;
+}
+.btn.active-venus{
+    background-color: #EDA249;
+}
+.btn.active-earth{
+    background-color: #6D2ED5;
+}
+.btn.active-mars{
+    background-color: #D14C32;
+}
+.btn.active-jupiter{
+    background-color: #D83A34;
+}
+.btn.active-saturn{
+    background-color: #CD5120;
+}
+.btn.active-uranus{
+    background-color: #1EC1A2;
+}
+.btn.active-neptune{
+    background-color: #2D68F0;
+}
+
+footer.stats-container{
+  padding-top: 27px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 30px;
+  padding-bottom: 56px;
+  margin-top: auto;
+}
+.stat-box {
+  width: 255px;
+  height: 128px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 20px;
+  padding-left: 23px;
+  padding-bottom: 27px;
+}
+.stat-box h4 {
+  font-family: "Spartan";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 25px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  mix-blend-mode: normal;
+  opacity: 0.5;
+}
+.stat-box h2 {
+  font-family: "Antonio";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 52px;
+  letter-spacing: -1.5px;
+  text-transform: uppercase;
+}
