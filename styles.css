@@ -239,3 +239,9 @@ footer.stats-container{
   letter-spacing: -1.5px;
   text-transform: uppercase;
 }
+audio::-webkit-media-controls-panel {
+  background-color: #56CCF2;
+}
+audio {
+  height: 30px;
+}
